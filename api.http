@@ -1,0 +1,43 @@
+### Listar modalidades
+GET http://localhost:3000
+
+### Cadastrar aluno
+POST http://localhost:3000/alunos
+Content-Type: application/json
+
+{
+  "nome": "",
+  "dataNascimento": "2005-09-22",
+  "modalidadeId": 4
+}
+### listar alunos
+GET http://localhost:3000/alunos
+
+
+### Listar modalidades
+GET http://localhost:3000/modalidades
+
+
+### cadastrar aluno
+POST http://localhost:3000/alunos
+Content-Type: application/json  
+
+{
+  "nome": "jacinto pinto aquino rego",
+  "dataNascimento": "09-22-2009",
+  "modalidadeId": 1
+}
+
+### listar alunos
+GET http://localhost:3000/alunos
+
+
+### login do aluno
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+    "email": "teste@email.com",
+    "senha": "123456"
+}
+
