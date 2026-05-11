@@ -55,10 +55,6 @@ body {
   background: rgba(230, 224, 224, 0.7);
 }
 
-.remember {
-  margin-bottom: 15px;
-}
-
 .forgot {
   font-size: 12px;
   text-decoration: none;
