@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh; 
+  background: url('campo.jpg') no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background: url('/TRABALHO/imag/TelaListar.jpg') no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 40px 20px;
+}
+
+.top-links {
+  position: absolute;
+  top: 20px;
+  left: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 10;
+}
+
+.top-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.8);
+}
+
+#Inicio:hover {
+  transform: translateY(-3px);
+  transform: scale(1.03);
+  filter: brightness(1.1);
+}
+
+#Voltar:hover {
+  transform: translateY(-3px);
+  transform: scale(1.03);
+  filter: brightness(1.1);
+}
+
+.card-table {
+  width: 100%;
+  max-width: 850px; 
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 25px;
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.5);
+  margin: auto; 
+}
+
+.table-header {
+  display: flex;
+  font-size: 20px;
+  font-weight: 800;
+  border-bottom: 3px solid rgba(0,0,0,0.3);
+  padding-bottom: 12px;
+  margin-bottom: 10px;
+}
+
+.table-body {
+  max-height: 50vh; 
+  overflow-y: auto;
+  padding-right: 5px;
+}
+
+.row {
+  display: flex;
+  padding: 15px 0;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.table-header span, .row span {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+}
+
+.table-header span:nth-child(1), .row span:nth-child(1) { width: 30%; padding-left: 10px; }
+.table-header span:nth-child(2), .row span:nth-child(2) { width: 20%; }
+.table-header span:nth-child(3), .row span:nth-child(3) { width: 25%; justify-content: center; }
+.table-header span:nth-child(4), .row span:nth-child(4) { width: 25%; justify-content: flex-end; padding-right: 10px; }
+
+.btn-edit, .btn-delete {
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  margin-left: 5px;
+  transition: 0.2s;
+}
+
+.btn-edit { background: #1fc385; }
+.btn-delete { background: #dc3545; }
+
+.btn-edit:hover, .btn-delete:hover {
+  transform: translateY(-3px);
+  transform: scale(1.03);
+  filter: brightness(1.1);
+  box-shadow: 0 6px 12px rgba(66, 61, 61, 0.2);
+}
+
+.btn-edit:active, .btn-delete:active {
+  transform: scale(0.98);
+}
+
+.table-body::-webkit-scrollbar { width: 6px; }
+.table-body::-webkit-scrollbar-thumb { background: rgba(0,0,0,0.3); border-radius: 10px; }
