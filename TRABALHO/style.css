@@ -55,16 +55,6 @@ body {
   background: rgba(230, 224, 224, 0.7);
 }
 
-.forgot {
-  font-size: 12px;
-  text-decoration: none;
-  color: #000;
-}
-
-.forgot:hover {
-  text-decoration: underline;
-}
-
 .btn {
   width: 100%;
   padding: 10px;
